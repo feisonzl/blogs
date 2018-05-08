@@ -34,7 +34,7 @@
 					if (this.password1 != this.password2){
 						return $form.showFormError('The two password differ');
 					}
-					var email=this.password1.trim();
+					var email=this.email.trim();
 					$form.postJSON('/api/users',{
 						name:this.name.trim(),
 						email:email,
