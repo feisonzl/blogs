@@ -54,7 +54,7 @@ def start_watch(path, callback):
 	observer.join()
 
 if __name__ == '__main__':
-	argv = sys.argv[0]
+	argv = sys.argv[1:]
 	if not argv:
 		print('Usage: ./blogmonitor your-script.py')
 		exit(0)
