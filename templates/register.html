@@ -25,7 +25,7 @@
 					if (! this.name.trim()){
 						return $form.showFormError('pls input name');
 					}
-					if (! validateEmail(this.email.trim().toLowCase()){
+					if (! validateEmail(this.email.trim().toLowerCase())){
 						return $form.showFormError('pls input the right email');
 					}
 					if (this.password1.length < 6){
@@ -66,7 +66,6 @@
                     <input v-model="name" type="text" maxlength="50" placeholder="name" class="uk-width-1-1">
                 </div>
             </div>
-            <!--
             <div class="uk-form-row">
                 <label class="uk-form-label">email:</label>
                 <div class="uk-form-controls">
@@ -88,7 +87,6 @@
             <div class="uk-form-row">
                 <button type="submit" class="uk-button uk-button-primary"><i class="uk-icon-user"></i> register</button>
             </div>
-            -->
         </form>
     </div>
 {% endblock %}
